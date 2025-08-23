@@ -26,9 +26,6 @@ The project also includes interactive visualizations using Streamlit.
 ├── requirements.txt # Required Python packages
 └── README.md # Project documentation
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -38,19 +35,13 @@ Edit
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
-Install dependencies:
+2. Install dependencies:
+   pip install -r requirements.txt
+3. Run the Streamlit app:
+   streamlit run app.py
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Streamlit app:
-
-bash
-Copy
-Edit
-streamlit run app.py
 📊 Usage
+
 Place your input dataset in the data/ folder.
 
 Run the app using the command above.
@@ -66,6 +57,7 @@ Display graphs interactively
 Save results in results/results.csv
 
 🧠 How It Works
+
 Anomaly Detection: The model learns normal patterns and flags deviations.
 
 Anomaly Score: Calculated as the distance of each data point from the learned normal distribution, scaled to 0–100.
@@ -73,17 +65,15 @@ Anomaly Score: Calculated as the distance of each data point from the learned no
 Top Features: Determined using feature importance from the anomaly model (which features contribute most to abnormality).
 
 📌 Example Output
+
 Interactive line plots showing anomalies in red
 
 Results CSV with anomaly score + top contributing feature(s)
 
 🤝 Contributing
+
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to improve.
 
 📜 License
+
 This project is licensed under the MIT License.
-
-
----
-
-Would you like me to also add a **short sample GIF/screenshot section*
