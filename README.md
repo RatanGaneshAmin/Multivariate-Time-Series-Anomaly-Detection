@@ -1,81 +1,89 @@
-# Multivariate-Time-Series-Anomaly-Detection
+# Multivariate Time Series Anomaly Detection
 
-This project detects anomalies in multivariate time-series data and highlights which features contributed most to the anomaly. It also provides anomaly scores and interactive plots using Streamlit.
+This project implements an AI-based anomaly detection system for multivariate time series data.  
+It identifies abnormal patterns across variables, assigns an anomaly score, and highlights the top contributing features.  
+The project also includes interactive visualizations using Streamlit.
 
-🚀 Features
+---
 
-Train on a “normal” period of data and detect abnormal patterns.
+## 🚀 Features
+- Detect anomalies in multivariate time series data  
+- Generate anomaly scores (0–100) for each record  
+- Identify **top contributing features** for anomalies  
+- Interactive visualizations with Streamlit  
+- Export results to CSV for further analysis  
 
-Assign anomaly scores (0–100) to each data point.
+---
 
-Identify top contributing features per anomaly.
+## 📂 Project Structure
+├── app.py # Main Streamlit app
+├── anomaly_detection.py # Core logic for anomaly detection
+├── data/
+│ └── dataset.csv # Input dataset
+├── results/
+│ ├── results.csv # Output file with anomaly scores & top features
+│ └── plots/ # Saved plots
+├── requirements.txt # Required Python packages
+└── README.md # Project documentation
 
-Export results as a CSV with anomalies marked.
+yaml
+Copy
+Edit
 
-Interactive visualization of anomalies.
+---
 
-📂 Project Structure
-├── app.py                  # Streamlit app for UI
-├── anomaly_detection.py    # Core anomaly detection logic
-├── sample_data.csv         # Example dataset
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation
+## ⚙️ Installation
 
-⚙️ Installation
-
-Clone this repository:
-
-git clone https://github.com/your-username/anomaly-detection.git
-cd anomaly-detection
-
-
-Create a virtual environment (optional but recommended):
-
-python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
-
-
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
 Install dependencies:
 
+bash
+Copy
+Edit
 pip install -r requirements.txt
+Run the Streamlit app:
 
-▶️ Running the App
-
-Run Streamlit:
-
+bash
+Copy
+Edit
 streamlit run app.py
+📊 Usage
+Place your input dataset in the data/ folder.
 
+Run the app using the command above.
 
-Open the local URL in your browser and explore the anomaly detection dashboard.
+The app will:
 
-📊 Output
+Train on normal patterns
 
-Interactive plots (highlighting anomalies in red).
+Detect anomalies
 
-Exported CSV with:
+Display graphs interactively
 
-anomaly_score
+Save results in results/results.csv
 
-is_anomaly
+🧠 How It Works
+Anomaly Detection: The model learns normal patterns and flags deviations.
 
-top_feature
+Anomaly Score: Calculated as the distance of each data point from the learned normal distribution, scaled to 0–100.
 
-📌 Example
+Top Features: Determined using feature importance from the anomaly model (which features contribute most to abnormality).
 
-Sample dataset row in exported CSV:
+📌 Example Output
+Interactive line plots showing anomalies in red
 
-timestamp	sensor1	sensor2	anomaly_score	is_anomaly	top_feature
-2023-01-01	10.5	45.2	92.1	1	sensor2
-🛠️ Tech Stack
+Results CSV with anomaly score + top contributing feature(s)
 
-Python
-
-Pandas, NumPy, Scikit-learn (data processing & anomaly detection)
-
-Streamlit (interactive app)
-
-Matplotlib / Plotly (visualization)
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to improve.
 
 📜 License
+This project is licensed under the MIT License.
 
-MIT License
+
+---
+
+Would you like me to also add a **short sample GIF/screenshot section*
