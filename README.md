@@ -16,15 +16,18 @@ The project also includes interactive visualizations using Streamlit.
 ---
 
 ## 📂 Project Structure
-├── app.py # Main Streamlit app
-├── anomaly_detection.py # Core logic for anomaly detection
+
+```text
+├── app.py                # Main Streamlit app
+├── anomaly_detection.py  # Core logic for anomaly detection
 ├── data/
-│ └── dataset.csv # Input dataset
+│   └── dataset.csv       # Input dataset
 ├── results/
-│ ├── results.csv # Output file with anomaly scores & top features
-│ └── plots/ # Saved plots
-├── requirements.txt # Required Python packages
-└── README.md # Project documentation
+│   ├── results.csv       # Output file with anomaly scores & top features
+│   └── plots/            # Saved plots
+├── requirements.txt      # Required Python packages
+└── README.md             # Project documentation
+
 
 
 ---
