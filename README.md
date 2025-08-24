@@ -6,6 +6,12 @@ The project also includes interactive visualizations using Streamlit.
 
 ---
 
+## Live Demo Link
+
+https://multivariate-time-series-anomaly-detection-qpfnvclrtzmzh37qkpy.streamlit.app/
+
+---
+
 ## 🚀 Features
 - Detect anomalies in multivariate time series data  
 - Generate anomaly scores (0–100) for each record  
