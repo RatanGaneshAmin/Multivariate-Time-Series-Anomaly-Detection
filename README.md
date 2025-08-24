@@ -28,7 +28,7 @@ The project also includes interactive visualizations using Streamlit.
 ├── requirements.txt      # Required Python packages
 └── README.md             # Project documentation
 
-
+```
 
 ---
 
