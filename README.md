@@ -79,8 +79,6 @@ Top Features: Determined using feature importance from the anomaly model (which 
 
 ## 📌 Example Output
 
-Interactive line plots showing anomalies in red
-
 Results CSV with anomaly score + top contributing feature(s)
 
 ## 🤝 Contributing
