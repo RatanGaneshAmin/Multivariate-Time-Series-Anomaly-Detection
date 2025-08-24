@@ -53,7 +53,7 @@ https://multivariate-time-series-anomaly-detection-qpfnvclrtzmzh37qkpy.streamlit
    streamlit run app.py
    ```
 
-📊 Usage
+## 📊 Usage
 
 Place your input dataset in the data/ folder.
 
@@ -69,7 +69,7 @@ Display graphs interactively
 
 Save results in results/results.csv
 
-🧠 How It Works
+## 🧠 How It Works
 
 Anomaly Detection: The model learns normal patterns and flags deviations.
 
@@ -77,16 +77,16 @@ Anomaly Score: Calculated as the distance of each data point from the learned no
 
 Top Features: Determined using feature importance from the anomaly model (which features contribute most to abnormality).
 
-📌 Example Output
+## 📌 Example Output
 
 Interactive line plots showing anomalies in red
 
 Results CSV with anomaly score + top contributing feature(s)
 
-🤝 Contributing
+## 🤝 Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to improve.
 
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
