@@ -24,7 +24,6 @@ The project also includes interactive visualizations using Streamlit.
 │   └── dataset.csv       # Input dataset
 ├── results/
 │   ├── results.csv       # Output file with anomaly scores & top features
-│   └── plots/            # Saved plots
 ├── requirements.txt      # Required Python packages
 └── README.md             # Project documentation
 
@@ -38,10 +37,15 @@ The project also includes interactive visualizations using Streamlit.
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
+   ```
 2. Install dependencies:
+   ```
    pip install -r requirements.txt
-3. Run the Streamlit app:
+   ```
+4. Run the Streamlit app:
+   ```
    streamlit run app.py
+   ```
 
 📊 Usage
 
